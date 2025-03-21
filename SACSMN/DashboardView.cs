@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace SACSMN
 {
-    public partial class Form2 : Form
+    public partial class DashboardView : Form
     {
-        public Form2()
+        public DashboardView()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnLogOut_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LogInView form1 = new LogInView();
-            form1.ShowDialog();
+            LogInView logInView = new LogInView();
+            logInView.ShowDialog();
         }
     }
 }
