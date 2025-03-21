@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace SACSMN
 {
-    public partial class Form3 : Form
+    public partial class CreateUserView : Form
     {
-        public Form3()
+        public CreateUserView()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 form1 = new Form1();
-            form1.ShowDialog();
+            LogInView logInView = new LogInView();
+            logInView.ShowDialog();
         }
     }
 }
