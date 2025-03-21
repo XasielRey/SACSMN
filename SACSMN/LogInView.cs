@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace SACSMN
 {
-    public partial class Form1 : Form
+    public partial class LogInView : Form
     {
-        public Form1()
+        public LogInView()
         {
             InitializeComponent();
         }
@@ -28,6 +29,16 @@ namespace SACSMN
             this.Hide();
             Form2 form2 = new Form2();
             form2.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
